@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>О себе - Учёный и исследователь</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <style>
+        h1, h2 {
+            color: var(--color-accent);
+            text-shadow: 1px 1px 3px rgba(11, 31, 77, 0.3);
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Понаморенко Данил</h1>
+        <p>Страница «О себе»: Учёный и исследователь</p>
+        <span class="badge">Учёный</span>
+    </header>
+
+    <nav class="nav" aria-label="Основное меню">
+        <ul class="nav-list">
+            <li><a href="#skills">Навыки</a></li>
+            <li><a href="#projects">Проекты</a></li>
+            <li><a href="#hypotheses">Гипотезы</a></li>
+            <li><a href="#methods">Методы</a></li>
+            <li><a href="#photo">Фотография</a></li>
+            <li><a href="#feedback">Обратная связь</a></li>
+        </ul>
+    </nav>
+
+    <main>
+
+        <section id="skills">
+            <h2>Навыки</h2>
+            <ul>
+                <li>Работа с большими массивами данных</li>
+                <li>Проведение и планирование экспериментов</li>
+                <li>Статистический анализ и построение моделей</li>
+                <li>Научная коммуникация и подготовка публикаций</li>
+                <li>Критическое мышление и проверка гипотез</li>
+            </ul>
+        </section>
+
+        <section id="projects">
+            <h2>Проекты</h2>
+            <ol class="projects-list">
+                <li class="project-card">Исследование влияния параллельных вычислений на скорость обработки больших данных</li>
+                <li class="project-card">Гипотеза: применение численных методов повышает точность прогнозирования погодных моделей</li>
+                <li class="project-card">Изучение эффективности различных алгоритмов оптимизации в задачах логистики</li>
+                <li class="project-card">Анализ зависимости между объёмом обучающей выборки и точностью нейросетевых моделей</li>
+            </ol>
+        </section>
+
+        <section id="hypotheses">
+            <h2>Гипотезы исследования</h2>
+            <div class="cards">
+                <article class="card">
+                    <h3>Гипотеза 1</h3>
+                    <p>Параллельные вычисления сокращают время обработки больших данных.</p>
+                    <p class="status status-ok">Статус: подтверждена</p>
+                </article>
+                <article class="card">
+                    <h3>Гипотеза 2</h3>
+                    <p>Применение численных методов повышает точность прогнозирования погодных моделей.</p>
+                    <p class="status status-progress">Статус: в проверке</p>
+                </article>
+                <article class="card">
+                    <h3>Гипотеза 3</h3>
+                    <p>Рост объёма обучающей выборки линейно повышает точность нейросетевых моделей.</p>
+                    <p class="status status-fail">Статус: отклонена</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="methods">
+            <h2>Методы исследования</h2>
+            <div class="methods-grid">
+                <article class="method">
+                    <span class="method-icon" aria-hidden="true">📊</span>
+                    <h3>Статистический анализ</h3>
+                    <p>Обработка данных и проверка гипотез.</p>
+                    <details>
+                        <summary>Подробнее</summary>
+                        <p>Расчёт описательных статистик, построение доверительных интервалов, применение критериев значимости и регрессионных моделей для оценки зависимостей между переменными.</p>
+                    </details>
+                </article>
+                <article class="method">
+                    <span class="method-icon" aria-hidden="true">🧮</span>
+                    <h3>Численное моделирование</h3>
+                    <p>Расчёты на компьютерных моделях.</p>
+                    <details>
+                        <summary>Подробнее</summary>
+                        <p>Дискретизация задач, применение численных схем и параллельных вычислений для моделирования процессов, которые сложно воспроизвести в эксперименте.</p>
+                    </details>
+                </article>
+                <article class="method">
+                    <span class="method-icon" aria-hidden="true">🧪</span>
+                    <h3>Лабораторный эксперимент</h3>
+                    <p>Проверка гипотез на практике.</p>
+                    <details>
+                        <summary>Подробнее</summary>
+                        <p>Планирование серии опытов с контрольной группой, фиксация условий и повторяемость измерений, сравнение результатов с теоретическими предсказаниями.</p>
+                    </details>
+                </article>
+            </div>
+        </section>
+
+        <section id="photo">
+            <h2>Фотография</h2>
+            <img src="https://foni.papik.pro/uploads/posts/2024-10/foni-papik-pro-c61d-p-kartinki-umnii-chelovechek-na-prozrachnom-2.png"
+                 alt="Портрет студента-исследователя" width="200" height="200">
+        </section>
+
+        <section id="feedback">
+            <h2>Обратная связь</h2>
+            <form action="#" method="post">
+                <div class="form-field">
+                    <label for="name">Имя:</label>
+                    <input type="text" id="name" name="name" placeholder="Введите ваше имя">
+                </div>
+                <div class="form-field">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Введите ваш email">
+                </div>
+                <div class="form-field">
+                    <label for="message">Сообщение:</label>
+                    <textarea id="message" name="message" placeholder="Введите ваше сообщение" rows="5"></textarea>
+                </div>
+                <button type="submit">Отправить</button>
+            </form>
+        </section>
+
+    </main>
+
+    <div class="glass-wrap">
+        <aside>
+            <h2>Любимые технологии</h2>
+            <p>Область науки, которая меня вдохновляет - <strong>вычислительная математика и анализ данных</strong>. Мне интересно, как численные методы и параллельные вычисления помогают решать сложные научные задачи.</p>
+            <p>Подробнее: <a href="https://en.wikipedia.org/wiki/Numerical_analysis" target="_blank" rel="noopener">Численные методы (Wikipedia)</a></p>
+        </aside>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Понаморенко Данил.</p>
+    </footer>
+
+</body>
+</html>
